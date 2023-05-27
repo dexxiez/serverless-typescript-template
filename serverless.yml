@@ -1,0 +1,22 @@
+service: gitchan
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+package:
+  individually: true
+
+custom:
+  webpack:
+    includeModules: true # enable auto-packing of external modules
+    webpackConfig: webpack.config.js # webpack config file path
+    packager: "npm"
+
+functions:
+  gitchan:
+    handler: src/main.handler
+
+plugins:
+  - serverless-webpack
