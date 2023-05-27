@@ -28,14 +28,11 @@ as above hahaah, its an absolute pain configuring this, so heres a basic templat
 
 ## Building
 
-To build the project:
-`shell
-    sls package
-    `
-To deploy the project using Serverless Framework:
-`shell
-    sls deploy
-    `
+```shell
+sls webpack # webpack only
+sls package # package + webpack
+sls deploy # package + webpack + deploy to cloud provider
+```
 
 ## Configuration
 
