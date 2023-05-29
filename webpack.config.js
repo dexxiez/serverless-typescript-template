@@ -6,7 +6,7 @@ module.exports = {
   entry: slsw.lib.entries,
   stats: "summary",
   resolve: {
-    extensions: [".ts"],
+    extensions: [".ts", ".js"],
   },
   target: "node",
   module: {
